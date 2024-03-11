@@ -9,9 +9,11 @@
 (_ type_def: (ident) @type)
 (_ function_def: (ident) @function)
 (_ variable_def: (ident) @variable)
+(_ ruleset_def: (ident) @tag)
 (_ type_use: (ident) @type)
 (_ function_use: (ident) @function)
 (_ variable_use: (ident) @variable)
+(_ ruleset_use: (ident) @tag)
 (_ option: (ident) @constant)
 
 ;; Keywords

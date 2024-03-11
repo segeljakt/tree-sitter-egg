@@ -433,8 +433,12 @@
           "value": "relation"
         },
         {
-          "type": "SYMBOL",
-          "name": "ident"
+          "type": "FIELD",
+          "name": "function_def",
+          "content": {
+            "type": "SYMBOL",
+            "name": "ident"
+          }
         },
         {
           "type": "SYMBOL",
@@ -458,8 +462,12 @@
           "value": "ruleset"
         },
         {
-          "type": "SYMBOL",
-          "name": "ident"
+          "type": "FIELD",
+          "name": "ruleset_def",
+          "content": {
+            "type": "SYMBOL",
+            "name": "ident"
+          }
         },
         {
           "type": "STRING",

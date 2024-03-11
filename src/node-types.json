@@ -782,15 +782,22 @@
   {
     "type": "command_relation",
     "named": true,
-    "fields": {},
+    "fields": {
+      "function_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
-        {
-          "type": "ident",
-          "named": true
-        },
         {
           "type": "type_ident",
           "named": true
@@ -909,16 +916,17 @@
   {
     "type": "command_ruleset",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "ident",
-          "named": true
-        }
-      ]
+    "fields": {
+      "ruleset_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
