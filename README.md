@@ -1,4 +1,4 @@
-A tree-sitter parser for egg.
+A tree-sitter parser for [egg](https://github.com/egraphs-good/egglog).
 
 Currently supports:
 * Syntax highlighting
