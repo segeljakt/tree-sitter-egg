@@ -18,11 +18,15 @@
 
 ;; Keywords
 [
+ ;; Commands
  "set-option" "datatype" "sort" "function" "declare" "relation" "ruleset" 
  "rule" "rewrite" "birewrite" "run" "simplify" "calc" "query-extract" "check" 
  "check-proof" "run-schedule" "print-stats" "push" "pop" "print-function" 
- "print-size" "input" "output" "fail" "include" "let" "set" "delete" "subsume" 
- "union" "panic" "extract"
+ "print-size" "input" "output" "fail" "include"
+ ;; Schedule
+ "saturate" "seq" "repeat"
+ ;; Actions
+ "let" "set" "delete" "subsume" "union" "panic" "extract"
 ] @keyword
 
 ;; Conditionals
