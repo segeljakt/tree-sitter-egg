@@ -1,0 +1,1726 @@
+[
+  {
+    "type": "action_call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_delete",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_extract",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_let",
+    "named": true,
+    "fields": {
+      "variable_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_panic",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_set",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_subsume",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "action_union",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "command_action",
+          "named": true
+        },
+        {
+          "type": "command_birewrite",
+          "named": true
+        },
+        {
+          "type": "command_calc",
+          "named": true
+        },
+        {
+          "type": "command_check",
+          "named": true
+        },
+        {
+          "type": "command_check_proof",
+          "named": true
+        },
+        {
+          "type": "command_datatype",
+          "named": true
+        },
+        {
+          "type": "command_declare",
+          "named": true
+        },
+        {
+          "type": "command_fail",
+          "named": true
+        },
+        {
+          "type": "command_function",
+          "named": true
+        },
+        {
+          "type": "command_include",
+          "named": true
+        },
+        {
+          "type": "command_input",
+          "named": true
+        },
+        {
+          "type": "command_output",
+          "named": true
+        },
+        {
+          "type": "command_pop",
+          "named": true
+        },
+        {
+          "type": "command_print_function",
+          "named": true
+        },
+        {
+          "type": "command_print_size",
+          "named": true
+        },
+        {
+          "type": "command_print_stats",
+          "named": true
+        },
+        {
+          "type": "command_push",
+          "named": true
+        },
+        {
+          "type": "command_query_extract",
+          "named": true
+        },
+        {
+          "type": "command_relation",
+          "named": true
+        },
+        {
+          "type": "command_rewrite",
+          "named": true
+        },
+        {
+          "type": "command_rule",
+          "named": true
+        },
+        {
+          "type": "command_ruleset",
+          "named": true
+        },
+        {
+          "type": "command_run",
+          "named": true
+        },
+        {
+          "type": "command_run_schedule",
+          "named": true
+        },
+        {
+          "type": "command_set_option",
+          "named": true
+        },
+        {
+          "type": "command_simplify",
+          "named": true
+        },
+        {
+          "type": "command_sort",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_action",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "action_call",
+          "named": true
+        },
+        {
+          "type": "action_delete",
+          "named": true
+        },
+        {
+          "type": "action_extract",
+          "named": true
+        },
+        {
+          "type": "action_let",
+          "named": true
+        },
+        {
+          "type": "action_panic",
+          "named": true
+        },
+        {
+          "type": "action_set",
+          "named": true
+        },
+        {
+          "type": "action_subsume",
+          "named": true
+        },
+        {
+          "type": "action_union",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_birewrite",
+    "named": true,
+    "fields": {
+      "ruleset_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "fact_call",
+          "named": true
+        },
+        {
+          "type": "fact_eq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_calc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "sort_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_check",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "fact_call",
+          "named": true
+        },
+        {
+          "type": "fact_eq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_check_proof",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "command_datatype",
+    "named": true,
+    "fields": {
+      "type_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "variant",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_declare",
+    "named": true,
+    "fields": {
+      "type_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      },
+      "variable_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "command_fail",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_function",
+    "named": true,
+    "fields": {
+      "function_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "action_call",
+          "named": true
+        },
+        {
+          "type": "action_delete",
+          "named": true
+        },
+        {
+          "type": "action_extract",
+          "named": true
+        },
+        {
+          "type": "action_let",
+          "named": true
+        },
+        {
+          "type": "action_panic",
+          "named": true
+        },
+        {
+          "type": "action_set",
+          "named": true
+        },
+        {
+          "type": "action_subsume",
+          "named": true
+        },
+        {
+          "type": "action_union",
+          "named": true
+        },
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "literal_int",
+          "named": true
+        },
+        {
+          "type": "schema",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_include",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_input",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_output",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "literal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_pop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "literal_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_print_function",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_print_size",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "command_print_stats",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "command_push",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "literal_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_query_extract",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "literal_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_relation",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "ident",
+          "named": true
+        },
+        {
+          "type": "type_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_rewrite",
+    "named": true,
+    "fields": {
+      "ruleset_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "fact_call",
+          "named": true
+        },
+        {
+          "type": "fact_eq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_rule",
+    "named": true,
+    "fields": {
+      "ruleset_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "action_call",
+          "named": true
+        },
+        {
+          "type": "action_delete",
+          "named": true
+        },
+        {
+          "type": "action_extract",
+          "named": true
+        },
+        {
+          "type": "action_let",
+          "named": true
+        },
+        {
+          "type": "action_panic",
+          "named": true
+        },
+        {
+          "type": "action_set",
+          "named": true
+        },
+        {
+          "type": "action_subsume",
+          "named": true
+        },
+        {
+          "type": "action_union",
+          "named": true
+        },
+        {
+          "type": "fact_call",
+          "named": true
+        },
+        {
+          "type": "fact_eq",
+          "named": true
+        },
+        {
+          "type": "literal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_ruleset",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_run",
+    "named": true,
+    "fields": {
+      "ruleset_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "fact_call",
+          "named": true
+        },
+        {
+          "type": "fact_eq",
+          "named": true
+        },
+        {
+          "type": "literal_int",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_run_schedule",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "schedule_ident",
+          "named": true
+        },
+        {
+          "type": "schedule_repeat",
+          "named": true
+        },
+        {
+          "type": "schedule_run",
+          "named": true
+        },
+        {
+          "type": "schedule_saturate",
+          "named": true
+        },
+        {
+          "type": "schedule_seq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_set_option",
+    "named": true,
+    "fields": {
+      "option": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_simplify",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        },
+        {
+          "type": "schedule_ident",
+          "named": true
+        },
+        {
+          "type": "schedule_repeat",
+          "named": true
+        },
+        {
+          "type": "schedule_run",
+          "named": true
+        },
+        {
+          "type": "schedule_saturate",
+          "named": true
+        },
+        {
+          "type": "schedule_seq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "command_sort",
+    "named": true,
+    "fields": {
+      "type_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      },
+      "type_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expr_call",
+    "named": true,
+    "fields": {
+      "function_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expr_ident",
+    "named": true,
+    "fields": {
+      "variable_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "expr_literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_bool",
+          "named": true
+        },
+        {
+          "type": "literal_float",
+          "named": true
+        },
+        {
+          "type": "literal_int",
+          "named": true
+        },
+        {
+          "type": "literal_string",
+          "named": true
+        },
+        {
+          "type": "literal_unit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fact_call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fact_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expr_call",
+          "named": true
+        },
+        {
+          "type": "expr_ident",
+          "named": true
+        },
+        {
+          "type": "expr_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ident",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "literal_bool",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "literal_float",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "literal_unit",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "program",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schedule_ident",
+    "named": true,
+    "fields": {
+      "ruleset_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "schedule_repeat",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_int",
+          "named": true
+        },
+        {
+          "type": "schedule_ident",
+          "named": true
+        },
+        {
+          "type": "schedule_repeat",
+          "named": true
+        },
+        {
+          "type": "schedule_run",
+          "named": true
+        },
+        {
+          "type": "schedule_saturate",
+          "named": true
+        },
+        {
+          "type": "schedule_seq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schedule_run",
+    "named": true,
+    "fields": {
+      "ruleset_use": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "fact_call",
+          "named": true
+        },
+        {
+          "type": "fact_eq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schedule_saturate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "schedule_ident",
+          "named": true
+        },
+        {
+          "type": "schedule_repeat",
+          "named": true
+        },
+        {
+          "type": "schedule_run",
+          "named": true
+        },
+        {
+          "type": "schedule_saturate",
+          "named": true
+        },
+        {
+          "type": "schedule_seq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schedule_seq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "schedule_ident",
+          "named": true
+        },
+        {
+          "type": "schedule_repeat",
+          "named": true
+        },
+        {
+          "type": "schedule_run",
+          "named": true
+        },
+        {
+          "type": "schedule_saturate",
+          "named": true
+        },
+        {
+          "type": "schedule_seq",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schema",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "type_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sort_ident",
+    "named": true,
+    "fields": {
+      "type_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "type_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_ident",
+    "named": true,
+    "fields": {
+      "type_use": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "variant",
+    "named": true,
+    "fields": {
+      "function_def": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "ident",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "literal_int",
+          "named": true
+        },
+        {
+          "type": "type_ident",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": "-inf",
+    "named": false
+  },
+  {
+    "type": ":cost",
+    "named": false
+  },
+  {
+    "type": ":default",
+    "named": false
+  },
+  {
+    "type": ":merge",
+    "named": false
+  },
+  {
+    "type": ":name",
+    "named": false
+  },
+  {
+    "type": ":on_merge",
+    "named": false
+  },
+  {
+    "type": ":ruleset",
+    "named": false
+  },
+  {
+    "type": ":subsume",
+    "named": false
+  },
+  {
+    "type": ":unextractable",
+    "named": false
+  },
+  {
+    "type": ":until",
+    "named": false
+  },
+  {
+    "type": ":variants",
+    "named": false
+  },
+  {
+    "type": ":when",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "NaN",
+    "named": false
+  },
+  {
+    "type": "birewrite",
+    "named": false
+  },
+  {
+    "type": "calc",
+    "named": false
+  },
+  {
+    "type": "check",
+    "named": false
+  },
+  {
+    "type": "check-proof",
+    "named": false
+  },
+  {
+    "type": "datatype",
+    "named": false
+  },
+  {
+    "type": "declare",
+    "named": false
+  },
+  {
+    "type": "delete",
+    "named": false
+  },
+  {
+    "type": "extract",
+    "named": false
+  },
+  {
+    "type": "fail",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "function",
+    "named": false
+  },
+  {
+    "type": "include",
+    "named": false
+  },
+  {
+    "type": "inf",
+    "named": false
+  },
+  {
+    "type": "input",
+    "named": false
+  },
+  {
+    "type": "let",
+    "named": false
+  },
+  {
+    "type": "line_comment",
+    "named": true
+  },
+  {
+    "type": "literal_int",
+    "named": true
+  },
+  {
+    "type": "literal_string",
+    "named": true
+  },
+  {
+    "type": "output",
+    "named": false
+  },
+  {
+    "type": "panic",
+    "named": false
+  },
+  {
+    "type": "pop",
+    "named": false
+  },
+  {
+    "type": "print-function",
+    "named": false
+  },
+  {
+    "type": "print-size",
+    "named": false
+  },
+  {
+    "type": "print-stats",
+    "named": false
+  },
+  {
+    "type": "push",
+    "named": false
+  },
+  {
+    "type": "query-extract",
+    "named": false
+  },
+  {
+    "type": "relation",
+    "named": false
+  },
+  {
+    "type": "repeat",
+    "named": false
+  },
+  {
+    "type": "rewrite",
+    "named": false
+  },
+  {
+    "type": "rule",
+    "named": false
+  },
+  {
+    "type": "ruleset",
+    "named": false
+  },
+  {
+    "type": "run",
+    "named": false
+  },
+  {
+    "type": "run-schedule",
+    "named": false
+  },
+  {
+    "type": "saturate",
+    "named": false
+  },
+  {
+    "type": "seq",
+    "named": false
+  },
+  {
+    "type": "set",
+    "named": false
+  },
+  {
+    "type": "set-option",
+    "named": false
+  },
+  {
+    "type": "simplify",
+    "named": false
+  },
+  {
+    "type": "sort",
+    "named": false
+  },
+  {
+    "type": "subsume",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "union",
+    "named": false
+  }
+]
